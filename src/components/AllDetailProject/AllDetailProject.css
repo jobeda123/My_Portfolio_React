@@ -1,0 +1,15 @@
+.projectInfo img{
+    width:100%;
+    margin-left:115px;
+    min-height:420px;
+    margin-bottom: 50px;
+}
+
+.detailInfoArea{
+    width:600px;
+    margin-left:116px;
+}
+
+.textProject{
+    text-align: left;
+}

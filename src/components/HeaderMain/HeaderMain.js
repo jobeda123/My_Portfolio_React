@@ -1,6 +1,7 @@
 import React from 'react';
 import './HeaderMain.css';
 import headerPic from '../../images/circle-cropped.png';
+import pic from '../../images/ezgif.com-gif-maker.gif';
 
 
 const HeaderMain = () => {

@@ -6,6 +6,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import AllDetailProject from './components/AllDetailProject/AllDetailProject';
 
 
 function App() {
@@ -13,12 +14,16 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route path="/">
+          {/* <Route path="/">
             <Home />
-          </Route>
+          </Route> */}
 
           <Route path="/home">
             <Home />
+          </Route>
+
+          <Route exact path="/projects">
+            <AllDetailProject/>
           </Route>
         </Switch>
       </Router>

@@ -5,6 +5,8 @@ import bakersLab from '../../images/bakersLab.PNG';
 import letsGo from '../../images/letsGo.PNG';
 import cookingMaster from '../../images/cookingMaster.PNG';
 import ProjectDetail from '../ProjectDetail/ProjectDetail';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 const projectData = [
@@ -17,6 +19,7 @@ const projectData = [
 
         stack: ["React.js", "React‐router", "Bootstrap", "Node.js", "MongoDB", "Stripe.js", "Firebase", "Heroku"],
         liveLink: "https://complete-website-client-123.firebaseapp.com/",
+        github: "",
         picture: helpingHand
     },
     {
@@ -25,6 +28,7 @@ const projectData = [
         description: ["To buy a cake, you have to sign in with your google account", "You can select one cake to buy and also you can see your previous orders", "User have to log in and then he/she can buy a cake"],
         stack: ["React.js", "React‐router", "Bootstrap", "Node.js", "MongoDB", "Firebase", "Heroku"],
         liveLink: "https://full-stack-client-jobeda123.web.app/",
+        github: "",
         picture: bakersLab
     }
 ]
@@ -34,10 +38,11 @@ const Projects = () => {
     console.log(projectData);
     return (
         <div>
-            <h1 style={{ textAlign: 'left', marginLeft:"100px"}} className="text-white">Latest Project {projectData.length}</h1>
+            <h1 style={{ textAlign: 'left', marginLeft: "100px" }} className="text-white">Latest Project {projectData.length}</h1>
+            <button className="brandButton">View All <FontAwesomeIcon className="icon active-icon" icon={faArrowRight} /></button>
             <div className="row d-flex">
                 {
-                    projectData.map(project =><ProjectDetail key={project.name} project={project}></ProjectDetail>)
+                    projectData.map(project => <ProjectDetail key={project.name} project={project}></ProjectDetail>)
                 }
             </div>
         </div>
