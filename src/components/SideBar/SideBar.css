@@ -1,0 +1,17 @@
+.sideBack{
+    /* border: 1px solid red; */
+    height: 1000px;
+    background-color:#583E2E;
+    padding-top: 200px;
+}
+
+.sideBack a{
+    /* border: 1px solid red; */
+    padding: 20px;
+    font-size:30px;
+    color:white;
+}
+
+.sideBack a:hover{
+    color:black;
+}
