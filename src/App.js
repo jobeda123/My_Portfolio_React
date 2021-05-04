@@ -15,17 +15,10 @@ function App() {
       <Router>
         <Switch>
 
-          <Route path="/home">
-            <Home />
-          </Route>
-
-          <Route exact path="/projects">
-            <AllDetailProject />
-          </Route>
-
           <Route path="/">
             <Home />
           </Route>
+
         </Switch>
       </Router>
     </div>

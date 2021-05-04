@@ -1,0 +1,17 @@
+.skillButton button{
+    border-radius: 10px;
+    /* width:100px; */
+    color: black;
+    background-color:skyblue;
+    padding:10px;
+    margin: 5px 10px 20px 0px;
+    font-size: 14px;
+}
+
+
+.aboutIcon a{
+    /* border: 1px solid red; */
+    padding-right: 15px;
+    font-size:30px;
+    color:#2596be;
+}

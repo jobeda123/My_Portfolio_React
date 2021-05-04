@@ -3,10 +3,14 @@
     /* padding: 20px; */
     /* margin-top:50px; */
     margin-right: 50px;
-    font-size:30px;
-    color:white;
+    font-size:35px;
+    color: rgb(55, 176, 224);
 }
 
 .project-icon a:hover{
-    color:black;
+    color:skyblue;
 }
+
+/* .boxStyle{
+    box-shadow: 5px 5px 5px gray;
+} */

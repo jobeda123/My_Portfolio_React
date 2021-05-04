@@ -11,32 +11,34 @@ const ProjectDetail = (props) => {
     const { name, type, description, stack, liveLink, picture } = props.project;
 
     return (
-        <Card style={{ width: '32rem', textAlign: 'left', marginLeft: "110px", marginTop: "50px" }}>
-            <Card.Img variant="top" style={{ height: "15rem" }} src={picture} />
-            <Card.Body style={{ backgroundColor: "#595775", color: "white" }}>
-                <Card.Title className="ps-3 pt-4">{name}</Card.Title>
-                <Card.Text className="ps-3">{type}</Card.Text>
-                <Card.Text>
-                    <ul className="ps-5">
+        <div className="col-md-6">
+            <Card className="mt-5" style={{ width: '32rem', textAlign: 'left', padding: "5px" }}>
+                <Card.Img className="img-fluid" variant="top" style={{ height: "15rem" }} src={picture} />
+                <Card.Body style={{ backgroundColor: "white", color: "black" }}>
+                    <Card.Title className="">{name}</Card.Title>
+                    <Card.Text className="">{type}</Card.Text>
+                    <Card.Text>
+                        <ul className="">
+                            {
+                                description.map(description => <li>{description}</li>)
+                            }
+                        </ul>
+                    </Card.Text>
+                    <Card.Text className="row d-flex justify-content-center">
                         {
-                            description.map(description => <li>{description}</li>)
+                            stack.map(description =>
+                                <p style={{ border: "2px solid rgb(55, 176, 224)", borderRadius: "10px", width: "100px", color: "black", padding: "5px", marginRight: "10px", fontSize: "14px" }} >
+                                    {description}</p>)
                         }
-                    </ul>
-                </Card.Text>
-                <Card.Text className="ps-5 row d-flex pt-4">
-                    {
-                        stack.map(description =>
-                            <p className="ps-3" style={{ borderRadius: "10px", width: "100px", backgroundColor: "#583E2E", padding: "10px", marginRight: "10px", fontSize: "14px" }} >
-                                {description}</p>)
-                    }
-                    <div className="project-icon pt-3">
-                        <a target="_blank" href={liveLink}> <FontAwesomeIcon className="icon active-icon" icon={faExternalLinkAlt} /></a>
-                        <a target="_blank" href={liveLink}> <FontAwesomeIcon className="icon active-icon" icon={faGithubSquare} /></a>
-
-                    </div>
-                </Card.Text>
-            </Card.Body>
-        </Card>
+                        <div className="project-icon d-flex justify-content-center">
+                            <a target="_blank" href={liveLink}><FontAwesomeIcon className="icon active-icon" icon={faGithubSquare} /></a>
+                            <a style={{fontSize: "32px"}} target="_blank" href={liveLink}><FontAwesomeIcon className="icon active-icon" icon={faExternalLinkAlt} /></a>
+                            <a target="_blank" href={liveLink}><FontAwesomeIcon className="icon active-icon" icon={faGithubSquare} /></a>
+                        </div>
+                    </Card.Text>
+                </Card.Body>
+            </Card>
+        </div>
     );
 };
 

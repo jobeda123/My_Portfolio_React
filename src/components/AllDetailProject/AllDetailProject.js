@@ -81,26 +81,18 @@ const AllDetailProject = () => {
     const d = projectData[0];
     console.log(d);
     return (
-        <div>
-            <div className="row col-md-12">
-                <Navbar></Navbar>
-            </div>
-            <div className="row d-flex">
-                <div className="col-md-1">
-                    <SideBar></SideBar>
-                </div>
-                <div className="col-md-11">
-                    <div className="headerMainBack textProject">
-                        <h1 style={{ marginLeft: "100px", marginBottom: "50px" }} className="text-white pt-5">My Project {projectData.length}</h1>
-                        <div className="d-flex row">
-                            {
-                                projectData.map(data => <AllDetailInfo data={data}></AllDetailInfo>)
-                            }
-                        </div>
+        <section className="projectArea bg-dark">
+            <div className="col-md-12">
+                <div className="headerMainBack textProject">
+                    <h1 style={{ marginLeft: "100px", marginBottom: "50px" }} className="text-white pt-5">My Project {projectData.length}</h1>
+                    <div className="d-flex row">
+                        {
+                            projectData.map(data => <AllDetailInfo data={data}></AllDetailInfo>)
+                        }
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

@@ -1,3 +1,23 @@
+.logoImg{
+    background-color: black;
+    width: 50px;
+}
+
+.navArea{
+    /* border:1px solid red; */
+}
+
+.navList{
+    /* border:1px solid blue; */
+    font-size:25px !important;
+    font-weight:bold;
+}
+
+.navList a:hover{
+    color: #2596be !important;
+}
+
+
 .navbarLink{
     font-weight:bold;
     font-size:20px;
