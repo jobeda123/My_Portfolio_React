@@ -15,7 +15,7 @@ const Skill = () => {
                         <a className="" target="_blank" href="https://github.com/jobeda123"><FontAwesomeIcon className="icon active-icon" icon={faGithubSquare} /></a>
                         <a target="_blank" href="https://www.linkedin.com/in/jobeda-nur/"><FontAwesomeIcon className="icon active-icon" icon={faLinkedinIn} /></a>
                         <a target="_blank" href="https://www.facebook.com/"><FontAwesomeIcon className="icon active-icon" icon={faFacebookSquare} /></a>
-                        <a target="_blank" href="https://medium.com/"><FontAwesomeIcon className="icon active-icon" icon={faMedium} /></a>
+                        <a target="_blank" href="https://jakhi161265.medium.com/"><FontAwesomeIcon className="icon active-icon" icon={faMedium} /></a>
                     </div>
                     <button className="buttonMainContact">Hire Me</button>
                 </div>
