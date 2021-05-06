@@ -1,9 +1,9 @@
 import React from 'react';
 import './Projects.css';
-import helpingHand from '../../images/helpingHand.PNG';
-import bakersLab from '../../images/bakersLab.PNG';
-import letsGo from '../../images/letsGo.PNG';
-import cookingMaster from '../../images/cookingMaster.PNG';
+import helpingHand from '../../images/helpingHand.gif';
+import bakersLab from '../../images/bakersLab.gif';
+import letsGo from '../../images/letsGo.gif';
+import cookingMaster from '../../images/cookingMonster.gif';
 import ProjectDetail from '../ProjectDetail/ProjectDetail';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -43,7 +43,7 @@ const projectData = [
 
         stack: ["React.js", "React‐router", "Bootstrap", "Node.js", "MongoDB", "Stripe.js", "Firebase", "Heroku"],
         liveLink: "https://complete-website-client-123.firebaseapp.com/",
-        github: "",
+        github: "https://github.com/jobeda123/Helping_hand",
         picture: helpingHand
     },
     {
@@ -52,28 +52,28 @@ const projectData = [
         description: ["To buy a cake, you have to sign in with your google account", "You can select one cake to buy and also you can see your previous orders", "User have to log in and then he/she can buy a cake"],
         stack: ["React.js", "React‐router", "Bootstrap", "Node.js", "MongoDB", "Firebase", "Heroku"],
         liveLink: "https://full-stack-client-jobeda123.web.app/",
-        github: "",
+        github: "https://github.com/jobeda123/Bakers-Lab",
         picture: bakersLab
     }
     ,
     {
-        name: "Baker's Lab",
-        type: "An Online Cake Shop",
-        description: ["To buy a cake, you have to sign in with your google account", "You can select one cake to buy and also you can see your previous orders", "User have to log in and then he/she can buy a cake"],
+        name: "Let's Go",
+        type: "An Online Transport System",
+        description: ["This is an online transport system, where user can get booked vehical throught online", "User can select one of transport system among Bike, Bus, Car, Train."],
         stack: ["React.js", "React‐router", "Bootstrap", "Node.js", "MongoDB", "Firebase", "Heroku"],
-        liveLink: "https://full-stack-client-jobeda123.web.app/",
-        github: "",
-        picture: bakersLab
+        liveLink: "https://react-auth-jobeda123.web.app",
+        github: "https://github.com/jobeda123/Lets_Go",
+        picture: letsGo
     }
     ,
     {
-        name: "Baker's Lab",
-        type: "An Online Cake Shop",
-        description: ["To buy a cake, you have to sign in with your google account", "You can select one cake to buy and also you can see your previous orders", "User have to log in and then he/she can buy a cake"],
-        stack: ["React.js", "React‐router", "Bootstrap", "Node.js", "MongoDB", "Firebase", "Heroku"],
-        liveLink: "https://full-stack-client-jobeda123.web.app/",
-        github: "",
-        picture: bakersLab
+        name: "Cooking Monster",
+        type: "Searching Food Ingredient Easily Using API",
+        description: ["Searching a food by its name and showing the results", "Clicking a specific food item, showing all the ingredients of that food item"],
+        stack: ["HTML", "CSS", "Bootstrap", "Javascript", "RestAPI"],
+        liveLink: "https://jobeda123.github.io/cooking-monster/index.html",
+        github: "https://github.com/jobeda123/cooking-monster",
+        picture: cookingMaster
     }
 ]
 

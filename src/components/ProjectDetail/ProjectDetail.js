@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 const ProjectDetail = (props) => {
-    const { name, type, description, stack, liveLink, picture } = props.project;
+    const { name, type, description, stack, liveLink, picture, github } = props.project;
 
     return (
         <div className="col-md-6">
@@ -31,9 +31,9 @@ const ProjectDetail = (props) => {
                                     {description}</p>)
                         }
                         <div className="project-icon d-flex justify-content-center">
-                            <a target="_blank" href={liveLink}><FontAwesomeIcon className="icon active-icon" icon={faGithubSquare} /></a>
+                            <a target="_blank" href={github}><FontAwesomeIcon className="icon active-icon" icon={faGithubSquare} /></a>
                             <a style={{fontSize: "32px"}} target="_blank" href={liveLink}><FontAwesomeIcon className="icon active-icon" icon={faExternalLinkAlt} /></a>
-                            <a target="_blank" href={liveLink}><FontAwesomeIcon className="icon active-icon" icon={faGithubSquare} /></a>
+                            {/* <a target="_blank" href={liveLink}><FontAwesomeIcon className="icon active-icon" icon={faGithubSquare} /></a> */}
                         </div>
                     </Card.Text>
                 </Card.Body>
