@@ -1,7 +1,9 @@
+*{
+  overflow-x: hidden;
+}
 .App {
   text-align: center;
 }
-
 
 .brandColor{
   color: #583E2E;

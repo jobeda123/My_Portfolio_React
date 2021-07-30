@@ -8,9 +8,9 @@ const Education = () => {
             <h2 style={{ color: "#2596be" }} className="pb-3">Education</h2>
             <div className="col-md-6">
                 <div className="pb-3">
-                    <h4>B.Sc. in Computer Science and Engineering <span style={{ fontSize: "20px" }}>(2016-2020)</span></h4>
-                    <h5>United International University</h5>
-                    <h6>Graduated with CGPA 3.80</h6>
+                    <h4 style={{overflow: "hidden"}}>B.Sc. in Computer Science and Engineering <span style={{ fontSize: "20px" }}>(2016-2020)</span></h4>
+                    <h5 style={{overflow: "hidden"}}>United International University</h5>
+                    <h6 style={{overflow: "hidden"}}>Graduated with CGPA 3.80</h6>
                 </div>
             </div>
         </section>

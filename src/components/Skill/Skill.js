@@ -20,7 +20,7 @@ const Skill = () => {
                     <button className="buttonMainContact">Hire Me</button>
                 </div>
                 <div className="col-md-4 offset-md-1 skillButton">
-                    <h3 style={{ color: "#2596be" }}>Technical Skills</h3>
+                    <h3 style={{ color: "#2596be", overflow: "hidden" }}>Technical Skills</h3>
                     <div className="pt-4">
                         <button>React.js</button>
                         <button>Javascript (ES6)</button>

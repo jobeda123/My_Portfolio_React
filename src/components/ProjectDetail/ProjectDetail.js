@@ -15,7 +15,7 @@ const ProjectDetail = (props) => {
             <Card className="mt-5" style={{ width: '32rem', textAlign: 'left', padding: "5px" }}>
                 <Card.Img className="img-fluid" variant="top" style={{ height: "15rem" }} src={picture} />
                 <Card.Body style={{ backgroundColor: "white", color: "black" }}>
-                    <Card.Title className="">{name}</Card.Title>
+                    <Card.Title style={{overflow: "hidden"}} className="">{name}</Card.Title>
                     <Card.Text className="">{type}</Card.Text>
                     <Card.Text>
                         <ul className="">
